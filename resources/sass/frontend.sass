@@ -1,0 +1,268 @@
+$vdpColor: #1f416b !default
+    
+@import 'tailwindcss/components'
+@import '~vue-date-pick/src/vueDatePick.scss'
+
+[v-cloak]
+    @apply hidden
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+    -webkit-box-shadow: 0 0 0 100px #f7fafc inset !important
+
+@keyframes mpcfq-spin
+    to
+        transform: rotate(360deg)
+
+#theme-page
+    input, select, textarea
+        &.mpcfq-input
+            @apply box-border text-sm bg-gray-100 border border-solid border-gray-300 py-2 px-4 text-gray-700 font-normal mb-0 rounded
+            line-height: inherit
+            transition: opacity .15s ease
+            &:focus
+                @apply outline-none
+            &:disabled
+                @apply cursor-default opacity-50
+            &:hover
+                @apply cursor-auto
+
+        &.mpcfq-input--search
+            @apply pl-10
+
+    select.mpcfq-input
+        @apply rounded #{!important}
+        min-width: unset
+
+    .mpcfq-dropdown
+        @apply z-20
+        max-height: 248px
+        min-width: 16em
+
+    .mpcfq-dropdown__flag
+        box-shadow: 0 0 1px 0 #888
+
+    .mpcfq-button
+        @apply box-border border border-solid text-base py-2 px-4 text-white font-bold mb-0 rounded shadow-lg
+        transition: box-shadow .15s ease, background-color .15s ease, border-color .15s ease, opacity .15s ease
+        line-height: inherit
+        &:focus
+            @apply outline-none
+        &:disabled
+            @apply cursor-default opacity-75
+        &:hover
+            @apply shadow-none
+
+    .mpcfq-button--primary
+        font-family: 'Playfair Display', sans-serif
+        background-color: #1f416b
+        border-color: #1f416b
+        &:hover
+            background-color: #173963
+            border-color: #173963
+    
+    .mpcfq-button--cancel
+        @apply bg-red-100 text-red-600 bg-white border-red-300
+        font-family: 'Playfair Display', sans-serif
+
+    .mpcfq-pagination-button
+        @apply box-border border border-solid border-gray-300 block text-base py-2 px-4 rounded text-sm
+        color: #1f416b
+        transition: background-color .15s ease, opacity .15s ease
+        line-height: inherit
+        &:focus
+            @apply outline-none
+        &:disabled
+            @apply cursor-default opacity-75
+        &:hover
+            @apply shadow-none
+
+    .mpcfq-pagination-button--current
+        @apply text-white
+        background-color: #1f416b
+        border-color: #1f416b
+
+    .mpcfq-button--inline
+        @apply inline-flex w-auto
+
+    .mpcfq-leg__remove
+        @apply box-border border-none block absolute top-0 bg-white shadow-lg rounded-r
+        width: 1em
+        height: 1em
+        line-height: 1em
+        font-size: 2em
+        right: -1em
+        &:focus
+            @apply outline-none
+        &:after
+            @apply top-0 absolute bg-white w-full h-full pointer-events-none
+            left: -1em
+            content: ''
+
+    .mpcfq-datetime
+        @apply block
+
+        & > input
+            @apply w-full text-sm bg-gray-100 border border-solid border-gray-300 py-2 px-4 text-gray-700 font-normal mb-0 rounded
+            line-height: inherit
+            &:focus
+                @apply outline-none
+            &:disabled
+                @apply cursor-default opacity-50
+            &:hover
+                @apply cursor-auto
+
+        .vdpClearInput
+            @apply hidden pointer-events-none
+
+        .vdpOuterWrap
+            @apply shadow-lg p-0 mt-1
+            animation: none
+            bottom: unset
+
+        .vdpInnerWrap
+            @apply rounded border-0
+            min-width: 32em
+            max-width: 100%
+
+        .vdpPeriodControl
+            button
+                @apply pointer-events-none
+                @apply cursor-default
+            select
+                @apply hidden
+
+        .vdpPrevDirection, .vdpNextDirection
+            animation: none
+
+        .vdpTable
+            @apply mb-0
+
+        .vdpHeader
+            margin-bottom: -3.5em
+
+        .vdpHeadCell
+            @apply normal-case
+
+        .vdpHeadCellContent
+            @apply text-xs
+        
+        .vdpCellContent
+            width: 2em
+            line-height: 2em
+
+    .mpcfq-phone
+        @apply relative rounded-none border-0 bg-gray-100
+        transition: opacity .15s ease
+        &:focus-within
+            @apply shadow-none
+        &.disabled, &.disabled .vti__dropdown
+            @apply cursor-default opacity-50
+        .vti__input
+            @apply w-full text-sm p-2 text-gray-700 font-normal mb-0 border border-solid border-l-0 rounded-r border-gray-300
+            line-height: inherit
+            background: none
+            &:focus
+                @apply outline-none
+            &:hover
+                @apply cursor-auto
+        .vti__dropdown
+            @apply static border border-solid border-r-0 border-gray-300 rounded-l pr-0
+            &:hover, &.open
+                background: none
+            &:focus
+                @apply outline-none
+        .vti__dropdown-arrow
+            @apply hidden
+        .vti__dropdown-list
+            @apply w-full left-0 border-0 rounded shadow-lg
+            &.below
+                @apply mt-1
+                top: 100%
+            &.above
+                @apply mb-1
+                bottom: 100%
+        .vti__dropdown-item
+            @apply flex items-center px-2 mx-0
+            &.highlighted
+                @apply bg-gray-200
+            .vti__flag
+                @apply flex-none mr-4
+            strong
+                @apply font-normal text-gray-700 mr-2
+            span
+                @apply ml-auto
+
+    .mpcfq-tooltip
+        @apply flex items-center p-1 -m-1 ml-auto
+        &:hover
+            cursor: help
+
+    .mpcfq-tooltip__icon
+        @apply relative z-10
+
+    .mpcfq-tooltip__body
+        @apply absolute py-3 px-4 bg-black text-white text-xs shadow-lg right-0 z-10 rounded mb-1
+        max-width: 100%
+        bottom: 100%
+
+    .mpcfq-loader::after
+        content: ""
+        display: block
+        box-sizing: border-box
+        width: 23px
+        height: 23px
+        border-radius: 50%
+        animation: spin 1s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite
+
+    .mpcfq-loader--primary::after
+        border: 2px solid #49b5e5
+        border-left-color: #fff
+
+    .mpcfq-loader--light::after
+        border: 2px solid #e2e8f0
+        border-left-color: #49b5e5
+
+    .mpcfq-checkbox
+        @apply relative
+        label
+            @apply relative flex pl-6 select-none
+            &:hover
+                @apply cursor-pointer
+            &:before
+                @apply mt-1 absolute w-4 h-4 rounded left-0 border border-solid border-gray-300 bg-gray-100
+                content: ''
+            &:after
+                @apply mt-2 hidden absolute w-2 h-2 rounded-sm left-0 ml-1
+                background-color: #1f416b
+                content: ''
+        input[type="checkbox"]
+            @apply absolute opacity-0 h-full
+            width: 16px
+            &:disabled + label
+                @apply cursor-default opacity-50
+            &:checked + label:after
+                @apply block
+
+    .mpcfq-invalid
+        .mpcfq-input, .mpcfq-phone .vti__dropdown, .mpcfq-phone .vti__input , .mpcfq-datetime > input
+            @apply border-red-400 bg-red-100
+
+        .mpcfq-checkbox
+            @apply text-red-600
+            label:before
+                @apply border-red-400 bg-red-100
+    
+    .mpcfq-error
+        @apply text-xs text-red-600 leading-tight flex items-center border-l border-solid rounded-r border-red-400 bg-red-100
+
+.mpcfq-overlay
+    z-index: 200 !important
+
+@screen xl 
+    .mpcfq-empty-legs-list
+        min-height: 448px
+
+@import 'tailwindcss/utilities'
