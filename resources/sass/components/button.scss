@@ -1,0 +1,67 @@
+/*-------- Button --------*/
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 44px;
+    padding: 0 20px;
+
+    background-color: $blue;
+    border-radius: 4px;
+
+    color: #ffffff;
+    font-family: $font-b;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    text-decoration: none;
+
+    transition: filter 0.2s ease-out;
+
+    &:hover {
+        filter: brightness(120%);
+    }
+}
+
+.button {
+
+    &--arrow &__text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &--arrow &__text:after {
+        content: url(../../../public/svg/arrow.svg);
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin-left: 20px;
+
+        transition: transform 0.2s ease-out;
+    }
+
+    &--arrow.opened &__text:after {
+        transform: rotateZ(-180deg);
+    }
+}
+
+.button {
+
+    &--transparent {
+        border: 2px solid #404040;
+        color: #404040;
+        background-color: transparent;
+
+        transition: background-color 0.2s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
+    }
+
+    &--transparent:hover {
+        background-color: $blue;
+        border-color: $blue;
+        filter: none;
+        color: #ffffff;
+    }
+}

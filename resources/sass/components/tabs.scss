@@ -1,0 +1,149 @@
+/*-------- Tabs --------*/
+
+.tabs {
+    &__menu {
+        margin-top: 30px;
+        position: relative;
+    }
+
+    &__menu-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu-item:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    &__menu-button {
+        width: 100%;
+        padding: 0 24px;
+
+        line-height: 1;
+        font-family: $font-r;
+        text-transform: unset;
+        background: #eeeeee;
+        color: #404040;
+
+        transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    }
+
+    &__menu-button:hover,
+    &__menu-button.active {
+        background-color: $blue;
+        color: #ffffff;
+    }
+
+    &__menu-button--mobile {
+        display: none;
+        background-color: $blue;
+        color: #ffffff;
+    }
+
+    &__wrapper {
+        margin-top: 52px;
+    }
+
+    &__item {
+        display: none;
+    }
+
+    &__item.active {
+        display: block;
+    }
+}
+
+.tabs {
+    &--categories {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 989px) {
+    .tabs {
+        &__menu-button {
+            padding: 0 15px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tabs {
+        
+        &__menu-item {
+            border-top: 1px solid #4c6789;
+        }
+
+        &__menu-button {
+            color: #ffffff;
+            font-size: 14px;
+            padding: 0 20px;
+        }
+
+        &__menu-button:not(&__menu-button--mobile) {
+            justify-content: flex-start;
+            border-radius: 0;
+            background-color: $blue;
+        }
+
+        &__menu-button--mobile {
+            display: flex;
+        }
+
+        &__menu-button--mobile:hover {
+            filter: none;
+        }
+
+        &__menu-button--mobile.opened {
+            background: #193557;
+            border-radius: 4px 4px 0 0;
+        }
+
+        &__menu-list {
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            flex-direction: column;
+            border-radius: 0 0 4px 4px;
+            overflow: hidden;
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition: opacity 0.2s ease-out;
+        }
+
+        &__menu-list.opened {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &__menu-item:not(:first-child) {
+            margin-left: 0;
+        }
+
+        &__wrapper {
+            margin-top: 36px;
+        }
+    }
+}
+
+@media (max-width:  479px) {
+
+    .tabs {
+
+        &--categories {
+            margin-top: 54px;
+        }
+
+        &--categories &__title {
+            display: none;
+        }
+
+        &--categories &__menu {
+            margin-top: 0;
+        }
+    }
+}

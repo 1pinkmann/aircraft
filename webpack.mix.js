@@ -55,4 +55,4 @@ mix.js('./resources/js/frontend.js', './public/js');
 /**
  * Compile SASS.
  */
-mix.sass('./resources/sass/frontend.sass', './public/css');
+mix.sass('./resources/sass/style.scss', './public/css');

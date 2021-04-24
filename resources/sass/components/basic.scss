@@ -1,0 +1,63 @@
+/*-------- Baisc --------*/
+
+body {
+    font-family: $font-r;
+    font-size: 14px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1184px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main {
+    padding-top: 88px;
+    padding-bottom: 97px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #777777;
+
+    &--mt {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1099px) {
+
+    .main {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 479px) {
+    
+    .main {
+        padding-top: 40px;
+    }
+
+    .text--mt {
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 359px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
