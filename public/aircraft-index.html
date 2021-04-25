@@ -38,7 +38,8 @@
         <section class="tabs tabs--categories" id="tabs">
             <h1 class="title tabs__title">AIRCRAFT CATEGORIES</h1>
             <div class="tabs__menu">
-                <button class="tabs__menu-button tabs__menu-button--mobile button button--arrow" id="tabs-mobile-button">
+                <button class="tabs__menu-button tabs__menu-button--mobile button button--arrow"
+                    id="tabs-mobile-button">
                     <span class="button__text" data-mobile-text>AIRCRAFT CATERGORIES</span>
                 </button>
                 <ul class="tabs__menu-list" id="tabs-menu-list">
@@ -63,798 +64,491 @@
                     </li>
                 </ul>
             </div>
+            <div class="tabs__head">
+                <div class="tabs__column tabs__column--1">
+                    <div class="tabs__text-wrapper tabs__text-wrapper--v1">
+                        <img class="tabs__icon" src="./svg/plane.svg" alt="">
+                        <h3 class="tabs__head-title">AIRCRAFT TYPE LIST</h3>
+                    </div>
+                </div>
+                <div class="tabs__column tabs__column--2">
+                    <img class="tabs__icon" src="./svg/users.svg" alt="">
+                    <div class="tabs__text-wrapper">
+                        <h3 class="tabs__head-title">MAX PASSENGERS</h3>
+                    </div>
+                </div>
+                <div class="tabs__column tabs__column--3">
+                    <img class="tabs__icon" src="./svg/beds.svg" alt="">
+                    <div class="tabs__text-wrapper">
+                        <h3 class="tabs__head-title">MAX BEDS</h3>
+                    </div>
+                </div>
+                <div class="tabs__column tabs__column--4">
+                    <img class="tabs__icon" src="./svg/baggage.svg" alt="">
+                    <div class="tabs__text-wrapper">
+                        <h3 class="tabs__head-title">NUMBER OF BAGGAGE</h3>
+                    </div>
+                </div>
+                <div class="tabs__column tabs__column--5">
+                    <img class="tabs__icon" src="./svg/pin.svg" alt="">
+                    <div class="tabs__text-wrapper">
+                        <h3 class="tabs__head-title">MAX RANGE</h3>
+                    </div>
+                </div>
+                <div class="tabs__column tabs__column--6">
+                    <img class="tabs__icon" src="./svg/clock.svg" alt="">
+                    <div class="tabs__text-wrapper">
+                        <h3 class="tabs__head-title">MAX HOURS</h3>
+                        <p class="tabs__hint">WITHOUT A FUEL STOPT</p>
+                    </div>
+                </div>
+                <div class="tabs__column tabs__column--7">
+                    <img class="tabs__icon" src="./svg/speed.svg" alt="">
+                    <div class="tabs__text-wrapper">
+                        <h3 class="tabs__head-title">MAX CRUISE SPEED</h3>
+                    </div>
+                </div>
+            </div>
             <ul class="tabs__wrapper" data-tab-wrapper>
                 <li class="tabs__item active" data-tab-item="1">
-                    <div class="table">
-                        <div class="table__head">
-                            <div class="table__column table__column--1">     
-                                <div class="table__text-wrapper table__text-wrapper--v1">
-                                    <img class="table__icon" src="./svg/plane.svg" alt="">
-                                    <h3 class="table__title">AIRCRAFT TYPE LIST</h3>
+                    <ul class="tabs__list">
+                        <li class="tabs__list-item">
+                            <a href="" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image1.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">BOEING 767</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--2">
-                                <img class="table__icon" src="./svg/users.svg" alt="">
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX PASSENGERS</h3>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--3">
-                                <img class="table__icon" src="./svg/beds.svg" alt="">
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX BEDS</h3>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--4">
-                                <img class="table__icon" src="./svg/baggage.svg" alt="">
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">NUMBER OF BAGGAGE</h3>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">300</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--5">
-                                <img class="table__icon" src="./svg/pin.svg" alt="">
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX RANGE</h3>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3055.00 nm</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--6">
-                                <img class="table__icon" src="./svg/clock.svg" alt="">
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX HOURS</h3>
-                                    <p class="table__hint">WITHOUT A FUEL STOPT</p>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">12 h</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--7">
-                                <img class="table__icon" src="./svg/speed.svg" alt="">
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX CRUISE SPEED</h3>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">443.00 knots</p>
                                 </div>
-                            </div>
-                        </div>
-                        <ul class="table__list">
-                            <li class="table__item">
-                                <a href="" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image1.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">BOEING 767</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">300</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3055.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">12 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">443.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image1.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">BOEING BUSINESS JET</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">19-56</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">N/A</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">150</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3550.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">4.50 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">485.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image3.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">AIRBUS CORPORATE JETS</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">19-56</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">6</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">40</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">5000.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">9 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">485.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image4.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">LINEAGE 1000</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">300</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3055.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">12h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">443.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image1.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">BOEING BUSINESS JET</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">19-56</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">N/A</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">150</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3550.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">4.50 h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">485.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image3.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">AIRBUS CORPORATE JETS</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">19-56</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">6</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">40</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">5000.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">9 h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">485.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image4.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">LINEAGE 1000</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">96</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">96</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">300</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3055.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">12h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">443.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="tabs__item" data-tab-item="2">
-                    <div class="table">
-                        <div class="table__head">
-                            <div class="table__column table__column--1">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#plane">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">AIRCRAFT TYPE LIST</h3>
+                    <ul class="tabs__list">
+                        <li class="tabs__list-item">
+                            <a href="" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image1.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">BOEING 767</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--2">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#users">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX PASSENGERS</h3>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--3">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#beds">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX BEDS</h3>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--4">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#baggage">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">NUMBER OF BAGGAGE</h3>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">300</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--5">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#pin">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX RANGE</h3>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3055.00 nm</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--6">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#clock">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX HOURS</h3>
-                                    <p class="table__hint">WITHOUT A FUEL STOPT</p>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">12 h</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--7">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#speed">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX CRUISE SPEED</h3>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">443.00 knots</p>
                                 </div>
-                            </div>
-                        </div>
-                        <ul class="table__list">
-                            <li class="table__item">
-                                <a href="" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image1.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">BOEING 767</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">300</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3055.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">12 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">443.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image1.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">BOEING BUSINESS JET</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">19-56</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">N/A</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">150</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3550.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">4.50 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">485.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image1.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">BOEING BUSINESS JET</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">19-56</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">N/A</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">150</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3550.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">4.50 h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">485.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="tabs__item" data-tab-item="3">
-                    <div class="table">
-                        <div class="table__head">
-                            <div class="table__column table__column--1">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#plane">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">AIRCRAFT TYPE LIST</h3>
+                    <ul class="tabs__list">
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image3.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">AIRBUS CORPORATE JETS</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--2">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#users">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX PASSENGERS</h3>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">19-56</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--3">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#beds">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX BEDS</h3>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">6</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--4">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#baggage">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">NUMBER OF BAGGAGE</h3>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">40</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--5">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#pin">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX RANGE</h3>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">5000.00 nm</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--6">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#clock">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX HOURS</h3>
-                                    <p class="table__hint">WITHOUT A FUEL STOPT</p>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">9 h</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--7">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#speed">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX CRUISE SPEED</h3>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">485.00 knots</p>
                                 </div>
-                            </div>
-                        </div>
-                        <ul class="table__list">
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image3.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">AIRBUS CORPORATE JETS</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">19-56</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">6</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">40</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">5000.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">9 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">485.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image4.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">LINEAGE 1000</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">300</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3055.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">12h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">443.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image4.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">LINEAGE 1000</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">96</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">96</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">300</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3055.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">12h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">443.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="tabs__item" data-tab-item="4">
-                    <div class="table">
-                        <div class="table__head">
-                            <div class="table__column table__column--1">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#plane">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">AIRCRAFT TYPE LIST</h3>
+                <li class="tabs__item" data-tab-item="4">  
+                    <ul class="tabs__list">
+                        <li class="tabs__list-item">
+                            <a href="" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image1.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">BOEING 767</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--2">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#users">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX PASSENGERS</h3>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--3">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#beds">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX BEDS</h3>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--4">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#baggage">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">NUMBER OF BAGGAGE</h3>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">300</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--5">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#pin">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX RANGE</h3>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3055.00 nm</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--6">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#clock">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX HOURS</h3>
-                                    <p class="table__hint">WITHOUT A FUEL STOPT</p>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">12 h</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--7">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#speed">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX CRUISE SPEED</h3>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">443.00 knots</p>
                                 </div>
-                            </div>
-                        </div>
-                        <ul class="table__list">
-                            <li class="table__item">
-                                <a href="" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image1.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">BOEING 767</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">300</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3055.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">12 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">443.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image3.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">AIRBUS CORPORATE JETS</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">19-56</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">6</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">40</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">5000.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">9 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">485.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image4.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">LINEAGE 1000</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">300</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3055.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">12h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">443.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image3.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">AIRBUS CORPORATE JETS</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">19-56</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">6</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">40</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">5000.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">9 h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">485.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image4.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">LINEAGE 1000</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">96</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">96</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">300</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3055.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">12h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">443.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="tabs__item" data-tab-item="5">
-                    <div class="table">
-                        <div class="table__head">
-                            <div class="table__column table__column--1">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#plane">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">AIRCRAFT TYPE LIST</h3>
+                    <ul class="tabs__list">
+                        <li class="tabs__list-item">
+                            <a href="" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image1.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">BOEING 767</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--2">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#users">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX PASSENGERS</h3>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--3">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#beds">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX BEDS</h3>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--4">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#baggage">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">NUMBER OF BAGGAGE</h3>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">300</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--5">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#pin">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX RANGE</h3>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3055.00 nm</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--6">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#clock">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX HOURS</h3>
-                                    <p class="table__hint">WITHOUT A FUEL STOPT</p>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">12 h</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--7">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#speed">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX CRUISE SPEED</h3>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">443.00 knots</p>
                                 </div>
-                            </div>
-                        </div>
-                        <ul class="table__list">
-                            <li class="table__item">
-                                <a href="" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image1.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">BOEING 767</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">300</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3055.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">12 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">443.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image4.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">LINEAGE 1000</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">300</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3055.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">12h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">443.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image4.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">LINEAGE 1000</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">96</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">96</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">300</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3055.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">12h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">443.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="tabs__item" data-tab-item="6">
-                    <div class="table">
-                        <div class="table__head">
-                            <div class="table__column table__column--1">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#plane">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">AIRCRAFT TYPE LIST</h3>
+                    <ul class="tabs__list">
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image4.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">LINEAGE 1000</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--2">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#users">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX PASSENGERS</h3>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--3">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#beds">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX BEDS</h3>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">96</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--4">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#baggage">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">NUMBER OF BAGGAGE</h3>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">300</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--5">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#pin">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX RANGE</h3>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3055.00 nm</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--6">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#clock">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX HOURS</h3>
-                                    <p class="table__hint">WITHOUT A FUEL STOPT</p>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">12h</p>
                                 </div>
-                            </div>
-                            <div class="table__column table__column--7">
-                                <svg class="table__icon">
-                                    <use xlink:href="./sprite.svg#speed">
-                                </svg>
-                                <div class="table__text-wrapper">
-                                    <h3 class="table__title">MAX CRUISE SPEED</h3>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">443.00 knots</p>
                                 </div>
-                            </div>
-                        </div>
-                        <ul class="table__list">
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image4.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">LINEAGE 1000</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">96</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">300</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3055.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">12h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">443.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image1.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">BOEING BUSINESS JET</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">19-56</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">N/A</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">150</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">3550.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">4.50 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">485.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="table__item">
-                                <a href="#" class="table__row">
-                                    <div class="table__column table__column--1">
-                                        <img src="./images/categories/image3.png" alt="" class="table__image">
-                                        <p class="table__text table__text--name">AIRBUS CORPORATE JETS</p>
-                                    </div>
-                                    <div class="table__column table__column--2">
-                                        <p class="table__text">19-56</p>
-                                    </div>
-                                    <div class="table__column table__column--3">
-                                        <p class="table__text">6</p>
-                                    </div>
-                                    <div class="table__column table__column--4">
-                                        <p class="table__text">40</p>
-                                    </div>
-                                    <div class="table__column table__column--5">
-                                        <p class="table__text">5000.00 nm</p>
-                                    </div>
-                                    <div class="table__column table__column--6">
-                                        <p class="table__text">9 h</p>
-                                    </div>
-                                    <div class="table__column table__column--7">
-                                        <p class="table__text">485.00 knots</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image1.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">BOEING BUSINESS JET</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">19-56</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">N/A</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">150</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">3550.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">4.50 h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">485.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tabs__list-item">
+                            <a href="#" class="tabs__row">
+                                <div class="tabs__column tabs__column--1">
+                                    <img src="./images/categories/image3.png" alt="" class="tabs__image">
+                                    <p class="tabs__text tabs__text--name">AIRBUS CORPORATE JETS</p>
+                                </div>
+                                <div class="tabs__column tabs__column--2">
+                                    <p class="tabs__text">19-56</p>
+                                </div>
+                                <div class="tabs__column tabs__column--3">
+                                    <p class="tabs__text">6</p>
+                                </div>
+                                <div class="tabs__column tabs__column--4">
+                                    <p class="tabs__text">40</p>
+                                </div>
+                                <div class="tabs__column tabs__column--5">
+                                    <p class="tabs__text">5000.00 nm</p>
+                                </div>
+                                <div class="tabs__column tabs__column--6">
+                                    <p class="tabs__text">9 h</p>
+                                </div>
+                                <div class="tabs__column tabs__column--7">
+                                    <p class="tabs__text">485.00 knots</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </section>
