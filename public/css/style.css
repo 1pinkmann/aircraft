@@ -23230,6 +23230,10 @@ button {
     margin-bottom: 16px;
   }
 
+  .plane__feature-border {
+    margin-bottom: 5px;
+  }
+
   .plane_feature-icon {
     margin-right: 10px;
   }
@@ -23539,7 +23543,7 @@ button {
 }
 
 .swiper-button:hover:before {
-  border-color: #1F416B;
+  border-color: #1f416b;
 }
 
 .swiper-pagination {
@@ -23566,7 +23570,7 @@ button {
 }
 
 @media (max-width: 767px) {
-  .swiper {
+  .swiper--plane {
     width: calc(100% + 40px);
     margin-left: -20px;
   }
@@ -23579,7 +23583,7 @@ button {
   }
 
   .swiper--plane .swiper-button {
-    border-color: #1F416B;
+    border-color: #1f416b;
     width: 32px;
     height: 32px;
   }
@@ -23593,7 +23597,7 @@ button {
   }
 
   .swiper--plane .swiper-button:hover {
-    background-color: #1F416B;
+    background-color: #1f416b;
   }
 
   .swiper--plane .swiper-button:hover:before {
@@ -23601,7 +23605,7 @@ button {
   }
 
   .swiper--plane .swiper-button:before {
-    border-color: #1F416B;
+    border-color: #1f416b;
   }
 
   .swiper--plane .swiper-pagination {
@@ -23611,11 +23615,18 @@ button {
   }
 
   .swiper--plane .swiper-pagination-bullet {
-    background: #DDDDDD;
+    background: #dddddd;
   }
 
   .swiper--plane .swiper-pagination-bullet-active {
-    background-color: #1F416B;
+    background-color: #1f416b;
+  }
+}
+
+@media (max-width: 359px) {
+  .swiper--plane {
+    width: calc(100% + 20px);
+    margin-left: -10px;
   }
 }
 

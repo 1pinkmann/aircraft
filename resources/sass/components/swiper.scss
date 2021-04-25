@@ -17,7 +17,6 @@
 }
 
 .swiper {
-
     &--plane {
         margin-top: 70px;
     }
@@ -162,10 +161,10 @@
     align-items: center;
     width: 100%;
     padding: 0 36px;
-    
+
     position: absolute;
     bottom: 36px;
-    left: 0;  
+    left: 0;
     z-index: 2;
 
     box-sizing: border-box;
@@ -183,7 +182,7 @@
     border-radius: 50%;
 
     position: relative;
-    transition: background-color 0.2s ease-out,;
+    transition: background-color 0.2s ease-out;
 
     &:before {
         content: "";
@@ -219,7 +218,7 @@
     }
 
     &:hover:before {
-        border-color: #1F416B;
+        border-color: #1f416b;
     }
 }
 
@@ -248,10 +247,11 @@
 }
 
 @media (max-width: 767px) {
-
     .swiper {
-        width: calc(100% + 40px);
-        margin-left: -20px;
+        &--plane {
+            width: calc(100% + 40px);
+            margin-left: -20px;
+        }
 
         &--plane .swiper-controls {
             margin-top: 40px;
@@ -261,7 +261,7 @@
         }
 
         &--plane .swiper-button {
-            border-color: #1F416B;
+            border-color: #1f416b;
             width: 32px;
             height: 32px;
         }
@@ -275,7 +275,7 @@
         }
 
         &--plane .swiper-button:hover {
-            background-color: #1F416B;
+            background-color: #1f416b;
         }
 
         &--plane .swiper-button:hover:before {
@@ -283,7 +283,7 @@
         }
 
         &--plane .swiper-button:before {
-            border-color: #1F416B;
+            border-color: #1f416b;
         }
 
         &--plane .swiper-pagination {
@@ -293,11 +293,18 @@
         }
 
         &--plane .swiper-pagination-bullet {
-            background: #DDDDDD;
+            background: #dddddd;
         }
 
         &--plane .swiper-pagination-bullet-active {
-            background-color: #1F416B;
+            background-color: #1f416b;
         }
+    }
+}
+
+@media (max-width: 359px) {
+    .swiper--plane {
+        width: calc(100% + 20px);
+        margin-left: -10px;
     }
 }
