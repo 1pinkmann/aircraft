@@ -34,7 +34,7 @@
     }
 
     &--arrow &__text:after {
-        content: url(../../../public/svg/arrow.svg);
+        content: url(./../../../public/svg/arrow.svg);
         display: block;
         width: 10px;
         height: 10px;
